@@ -22,4 +22,5 @@ int main(){
 		}
 	printf("\n");
 	printf("%d",max);
+	return 0;
 }
