@@ -19,6 +19,15 @@
 // The number of elements n is between 1 and 1000.
 // Each integer in the array is between -1,000,000 and 1,000,000.
 
+// Test case 1
+// 6	
+// 10 5 3 8 6 7	
+// 3·5·6·7·8·10	
+// Test case 2
+// 3	
+// 2 4 6 8	
+// -1
+
 #include <stdio.h>
 int main(){
 	int n,i,j,elements;
