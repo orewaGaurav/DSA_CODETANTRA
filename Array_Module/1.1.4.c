@@ -1,3 +1,29 @@
+// Implement a program to check if an array of size 
+// n
+//  is sorted in ascending order or not.
+
+
+
+// Input Format:
+
+// The first line of the input represents an integer 
+// n
+// The second line of the input represents 
+// n
+//  space separated elements of the array (Integers)
+// Output Format:
+
+// The output represents True if the array is sorted in ascending order, otherwise, it is False
+
+// Test case 1
+// 5	
+// 1 2 3 4 5	
+// True	
+// Test case 2
+// 4	
+// 10 5 15 20	
+// False
+
 #include <stdio.h>
 int main(){
 	int n;
