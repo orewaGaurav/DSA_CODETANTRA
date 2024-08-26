@@ -1,3 +1,30 @@
+// Implement a program to reverse the elements of an array of size 
+// n
+// .
+
+
+
+// Input Format:
+
+// The first line of the input contains an integer 
+// n
+//  representing the number of elements.
+// The second line of the input represents 
+// n
+//  space separated elements of the array (Integers).
+// Output Format:
+
+// The output represents the elements of the input array in reversed order.
+
+// Test case 1
+// 3	
+// 1 2 3	
+// [3,·2,·1]	
+// Test case 2
+// 6	
+// 0 -1 2 -3 4 -5	
+// [-5,·4,·-3,·2,·-1,·0]
+
 #include <stdio.h>
 int main(){
 	int n;
