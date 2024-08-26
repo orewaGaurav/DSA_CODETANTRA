@@ -1,3 +1,39 @@
+// Given a list of N numbers a1, a2, a3........an. Find The Position of number x in the given list using binary search.
+
+
+
+// Note:
+
+// The default position of first element is 0, and find the element's position in the sorted order of occurrence. Print -1 if not found.
+
+
+
+// For repeated elements find the position of the last occurrence.
+
+
+
+// Constraints:
+
+// 0<N<1000
+// 0<element of array <100
+// 0<x<100
+
+// Input Format:
+
+// The first line takes the input value of N.
+
+// The second line takes input N space-separated integer values.
+
+// The third line takes the input value of x which needs to be searched.
+
+
+
+// Output Format:
+
+// Output is an integer that represents the position of x in the given list. Otherwise print -1
+
+
+
 #include <stdio.h>
 int main(){
 	int n;
