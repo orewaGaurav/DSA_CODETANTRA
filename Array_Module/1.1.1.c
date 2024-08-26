@@ -1,3 +1,32 @@
+// Implement a program to find the maximum element in an array of size 
+// n
+// .
+
+
+
+// Input Format:
+
+// The first line of the input represents an integer 
+// n
+// The second line of the input represents 
+// n
+//  space separated elements of the array (Integers)
+// Output Format:
+
+// The first line of the output represents the input array.
+// The second line contains an integer representing the maximum element of the array.
+
+// Test case 1
+// 4	
+// 7 2 9 5	
+// [7,·2,·9,·5]⏎	
+// 9	
+// Test case 2
+// 3	
+// -1 -4 0	
+// [-1,·-4,·0]⏎	
+// 0
+
 #include <stdio.h>
 int main(){
 	int n;
