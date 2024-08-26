@@ -33,6 +33,17 @@
 // Output is an integer that represents the position of x in the given list. Otherwise print -1
 
 
+// Test case 1
+// 5	
+// 1 5 8 7 4	
+// 8	
+// 2	
+// Test case 2
+// 5	
+// 12 85 97 45 2	
+// 145	
+// -1
+
 
 #include <stdio.h>
 int main(){
