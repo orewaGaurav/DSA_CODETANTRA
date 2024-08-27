@@ -16,6 +16,7 @@
 // The first line of the output represents the input array.
 // The second line contains an integer representing the maximum element of the array.
 
+//output cases
 // Test case 1
 // 4	
 // 7 2 9 5	
