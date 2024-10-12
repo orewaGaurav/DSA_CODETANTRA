@@ -14,7 +14,7 @@ void insert(int value){
 	if(head ==NULL)
 		head = ptr;
 	else{
-		tmp =head;
+		tmp = head;
 		while(tmp->next!=NULL){
 			tmp =tmp->next;
 		}
