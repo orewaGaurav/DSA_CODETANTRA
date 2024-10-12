@@ -24,27 +24,26 @@ void insert(int value){
 
 //function to delete the node by value
 void delete(int value){
-	if(head == NULL){
+	if(head == NULL){//no node exists
 		return;
 	}
-	if(head->next==NULL){//first node delete
+	if(head->next==NULL){//first node delete case
 		struct node *tmp;
 		tmp = head;
 		head = tmp->next;
 		free(tmp);
 		return;
 	}
-	struct node *tmp;
+	struct node *tmp,*del;
 	tmp=head;
 	while(tmp->next!=NULL && tmp->next->data!=value){
 		tmp=tmp->next;
 	}
-	if(tmp->next==NULL){
+	if(tmp->next==NULL){//entered value to delete is not in node so it will do nothing
 		return;
 	}
-	struct node *del;
 	del = tmp->next;
-	tmp->next=tmp->next->next;
+	tmp->next=del->next;
 	free(del);
 }
 
