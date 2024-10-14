@@ -34,7 +34,7 @@ void delete(int value){
 	if(tmp->data == value){
 		head = tmp->next;
 		if(head !=NULL)
-		head->pre=NULL;
+		head->pre=NULL;//q ki ye abb first node hogya to es se phle abb kuch nai hoga
 		free(tmp);
 		return;
 	}
@@ -44,8 +44,9 @@ void delete(int value){
 	if(tmp->next == NULL)
 	//entered value does not exists
 	return;
-	del = tmp->next;
-	tmp->next=del->next;
+
+	del = tmp->next;//jo node ko delete krna hai wo del hai
+	tmp->next=del->next;//tmp del se ek phle wla node hai
 	if(del->next!=NULL)
 	del->next->pre=tmp;
 	free(del);
