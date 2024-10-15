@@ -19,7 +19,7 @@ void insert(int value){
 		while(tmp->next != NULL){
 			tmp = tmp->next;
 		}
-		tmp->next=ptr;
+		tmp->next = ptr;
 		ptr->pre = tmp;	
 	}
 }
