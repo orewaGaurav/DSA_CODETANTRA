@@ -12,7 +12,7 @@ void insert(int value){
 	ptr->next = NULL;
 	ptr->data = value;
 	ptr->pre = NULL;
-	if(head==NULL)
+	if(head == NULL)
 	head = ptr;
 	else{
 		tmp = head;
