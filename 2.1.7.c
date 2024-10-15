@@ -9,7 +9,7 @@ struct node {
 void insert(int value){
 	struct node *ptr,*tmp;
 	ptr = (struct node*)malloc(sizeof(struct node));
-	ptr->next=NULL;
+	ptr->next = NULL;
 	ptr->data=value;
 	ptr->pre=NULL;
 	if(head==NULL)
