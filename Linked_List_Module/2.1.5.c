@@ -5,11 +5,32 @@ struct node{
 	struct node *next;
 }*head=NULL;
 void insert(int value){
-	struct node *ptr;
+	struct node *ptr,*tmp;
 	ptr=(struct node*)malloc(sizeof(struct node));
 	ptr->data = value;
-	ptr->next =head;
+	ptr->next =NULL;
+	if(head==NULL)
 	head=ptr;
+	else{
+		tmp= head;
+		while(tmp->next!=NULL){
+			tmp=tmp->next;
+		}
+		tmp->next=ptr;
+	}
+}
+void reverse(){
+	struct node *pre,*curr,*nxt;
+	pre =NULL;
+	curr=head;
+	nxt=head;
+	while(nxt!=NULL){
+		nxt=nxt->next;
+		curr->next = pre;
+		pre = curr;
+		curr = nxt;
+	}
+	head=pre;
 }
 void display(){
 	struct node *tmp;
@@ -27,5 +48,6 @@ int main (){
 		scanf("%d",&value);
 		insert(value);
 	}
+	reverse();
 	display();
 }
